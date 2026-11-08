@@ -1,0 +1,67 @@
+[
+  {
+    "id": "std-1001",
+    "studentId": "STU-1001",
+    "fullName": "Aisha Noor",
+    "email": "aisha.noor@campus.edu",
+    "phone": "+1 (555) 123-4501",
+    "course": "Computer Science",
+    "year": "Year 2",
+    "dob": "2004-05-12",
+    "address": "New York, USA",
+    "status": "Active",
+    "createdAt": "2025-01-15T09:30:00.000Z"
+  },
+  {
+    "id": "std-1002",
+    "studentId": "STU-1002",
+    "fullName": "Daniel Kim",
+    "email": "daniel.kim@campus.edu",
+    "phone": "+1 (555) 123-4502",
+    "course": "Business Administration",
+    "year": "Year 3",
+    "dob": "2003-09-08",
+    "address": "Chicago, USA",
+    "status": "Active",
+    "createdAt": "2025-02-22T11:20:00.000Z"
+  },
+  {
+    "id": "std-1003",
+    "studentId": "STU-1003",
+    "fullName": "Marta Silva",
+    "email": "marta.silva@campus.edu",
+    "phone": "+1 (555) 123-4503",
+    "course": "Architecture",
+    "year": "Year 1",
+    "dob": "2005-01-18",
+    "address": "Miami, USA",
+    "status": "Pending",
+    "createdAt": "2025-03-12T08:10:00.000Z"
+  },
+  {
+    "id": "std-1004",
+    "studentId": "STU-1004",
+    "fullName": "Samuel Addo",
+    "email": "samuel.addo@campus.edu",
+    "phone": "+1 (555) 123-4504",
+    "course": "Electrical Engineering",
+    "year": "Year 4",
+    "dob": "2002-11-28",
+    "address": "Dallas, USA",
+    "status": "Graduated",
+    "createdAt": "2024-08-30T13:40:00.000Z"
+  },
+  {
+    "id": "std-1005",
+    "studentId": "STU-1005",
+    "fullName": "Priya Nair",
+    "email": "priya.nair@campus.edu",
+    "phone": "+1 (555) 123-4505",
+    "course": "Digital Media",
+    "year": "Year 2",
+    "dob": "2004-04-03",
+    "address": "Boston, USA",
+    "status": "On Leave",
+    "createdAt": "2025-04-05T10:00:00.000Z"
+  }
+]

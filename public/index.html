@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration & Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Student Portal</p>
+          <h1>Registration & Management</h1>
+        </div>
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Live System
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="stats-panel">
+          <div class="stat-card accent-blue">
+            <span class="label">Total Students</span>
+            <strong id="totalStudents">0</strong>
+          </div>
+          <div class="stat-card accent-green">
+            <span class="label">Active</span>
+            <strong id="activeStudents">0</strong>
+          </div>
+          <div class="stat-card accent-amber">
+            <span class="label">Pending</span>
+            <strong id="pendingStudents">0</strong>
+          </div>
+          <div class="stat-card accent-violet">
+            <span class="label">Average Age</span>
+            <strong id="avgAge">0 yrs</strong>
+          </div>
+        </section>
+
+        <section class="panel form-panel">
+          <div class="panel-header">
+            <h2 id="formTitle">Register New Student</h2>
+          </div>
+
+          <form id="studentForm">
+            <input type="hidden" id="studentIdField" />
+
+            <div class="form-grid">
+              <label>
+                <span>Student ID</span>
+                <input type="text" id="studentId" name="studentId" placeholder="STU-1006" required />
+              </label>
+
+              <label>
+                <span>Full Name</span>
+                <input type="text" id="fullName" name="fullName" placeholder="Jane Doe" required />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input type="email" id="email" name="email" placeholder="jane.doe@campus.edu" required />
+              </label>
+
+              <label>
+                <span>Phone</span>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" />
+              </label>
+
+              <label>
+                <span>Course</span>
+                <input type="text" id="course" name="course" placeholder="Computer Science" required />
+              </label>
+
+              <label>
+                <span>Academic Year</span>
+                <select id="year" name="year" required>
+                  <option value="">Select year</option>
+                  <option value="Year 1">Year 1</option>
+                  <option value="Year 2">Year 2</option>
+                  <option value="Year 3">Year 3</option>
+                  <option value="Year 4">Year 4</option>
+                  <option value="Postgraduate">Postgraduate</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Date of Birth</span>
+                <input type="date" id="dob" name="dob" />
+              </label>
+
+              <label>
+                <span>Status</span>
+                <select id="status" name="status" required>
+                  <option value="">Select status</option>
+                  <option value="Active">Active</option>
+                  <option value="Pending">Pending</option>
+                  <option value="On Leave">On Leave</option>
+                  <option value="Graduated">Graduated</option>
+                </select>
+              </label>
+
+              <label class="full-width">
+                <span>Address</span>
+                <textarea id="address" name="address" rows="3" placeholder="Enter address"></textarea>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" id="submitBtn" class="primary-btn">Save Student</button>
+              <button type="button" id="cancelEditBtn" class="secondary-btn hidden">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel table-panel">
+          <div class="panel-header list-header">
+            <h2>Student Records</h2>
+            <div class="toolbar">
+              <input type="search" id="searchInput" placeholder="Search students..." />
+              <select id="statusFilter">
+                <option value="All">All Status</option>
+                <option value="Active">Active</option>
+                <option value="Pending">Pending</option>
+                <option value="On Leave">On Leave</option>
+                <option value="Graduated">Graduated</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Student ID</th>
+                  <th>Name</th>
+                  <th>Course</th>
+                  <th>Year</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="studentTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
